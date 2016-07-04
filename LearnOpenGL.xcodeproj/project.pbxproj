@@ -24,7 +24,7 @@
 		AB965F261D2A3F9600E0AAD2 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F091D2A16D300E0AAD2 /* libglfw3.a */; };
 		AB965F271D2A3F9E00E0AAD2 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F071D2A16B900E0AAD2 /* libGLEW.a */; };
 		AB965F281D2A712D00E0AAD2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F0B1D2A175C00E0AAD2 /* CoreVideo.framework */; };
-		AB965F2B1D2A7A2500E0AAD2 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F291D2A7A2500E0AAD2 /* Shader.cpp */; };
+		AB965F331D2AA80A00E0AAD2 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F321D2AA80A00E0AAD2 /* Shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,8 +72,10 @@
 		AB965F121D2A380D00E0AAD2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		AB965F181D2A3B3800E0AAD2 /* HelloTriangles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangles; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB965F1A1D2A3B3800E0AAD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		AB965F291D2A7A2500E0AAD2 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
-		AB965F2A1D2A7A2500E0AAD2 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		AB965F2C1D2AA3DA00E0AAD2 /* triangles.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = triangles.frag; sourceTree = "<group>"; };
+		AB965F2D1D2AA3DA00E0AAD2 /* triangles.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = triangles.vert; sourceTree = "<group>"; };
+		AB965F311D2AA7E900E0AAD2 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		AB965F321D2AA80A00E0AAD2 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +120,8 @@
 		AB965EE31D2A08B600E0AAD2 = {
 			isa = PBXGroup;
 			children = (
-				AB965F291D2A7A2500E0AAD2 /* Shader.cpp */,
-				AB965F2A1D2A7A2500E0AAD2 /* Shader.h */,
+				AB965F321D2AA80A00E0AAD2 /* Shader.cpp */,
+				AB965F311D2AA7E900E0AAD2 /* Shader.h */,
 				AB965F121D2A380D00E0AAD2 /* IOKit.framework */,
 				AB965F0D1D2A196900E0AAD2 /* libGLEW.a */,
 				AB965F0B1D2A175C00E0AAD2 /* CoreVideo.framework */,
@@ -164,6 +166,8 @@
 		AB965F191D2A3B3800E0AAD2 /* HelloTriangles */ = {
 			isa = PBXGroup;
 			children = (
+				AB965F2C1D2AA3DA00E0AAD2 /* triangles.frag */,
+				AB965F2D1D2AA3DA00E0AAD2 /* triangles.vert */,
 				AB965F1A1D2A3B3800E0AAD2 /* main.cpp */,
 			);
 			path = HelloTriangles;
@@ -267,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB965F2B1D2A7A2500E0AAD2 /* Shader.cpp in Sources */,
 				AB965EF01D2A08B600E0AAD2 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB965F331D2AA80A00E0AAD2 /* Shader.cpp in Sources */,
 				AB965F1B1D2A3B3800E0AAD2 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
