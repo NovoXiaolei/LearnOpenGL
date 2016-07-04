@@ -16,6 +16,7 @@
 		AB965F101D2A37F600E0AAD2 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F0D1D2A196900E0AAD2 /* libGLEW.a */; };
 		AB965F111D2A37FA00E0AAD2 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F091D2A16D300E0AAD2 /* libglfw3.a */; };
 		AB965F131D2A380D00E0AAD2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F121D2A380D00E0AAD2 /* IOKit.framework */; };
+		AB965F1B1D2A3B3800E0AAD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F1A1D2A3B3800E0AAD2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		AB965EF81D2A0BD000E0AAD2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AB965F161D2A3B3800E0AAD2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -52,6 +62,8 @@
 		AB965F0B1D2A175C00E0AAD2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		AB965F0D1D2A196900E0AAD2 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../../usr/local/lib/libGLEW.a; sourceTree = "<group>"; };
 		AB965F121D2A380D00E0AAD2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		AB965F181D2A3B3800E0AAD2 /* HelloTriangles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangles; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB965F1A1D2A3B3800E0AAD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB965F151D2A3B3800E0AAD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +111,7 @@
 				AB965F011D2A167500E0AAD2 /* OpenGL.framework */,
 				AB965EEE1D2A08B600E0AAD2 /* LearnOpenGL */,
 				AB965EFB1D2A0BD000E0AAD2 /* HelloWindow */,
+				AB965F191D2A3B3800E0AAD2 /* HelloTriangles */,
 				AB965EED1D2A08B600E0AAD2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +121,7 @@
 			children = (
 				AB965EEC1D2A08B600E0AAD2 /* LearnOpenGL */,
 				AB965EFA1D2A0BD000E0AAD2 /* HelloWindow */,
+				AB965F181D2A3B3800E0AAD2 /* HelloTriangles */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +140,14 @@
 				AB965EFC1D2A0BD000E0AAD2 /* main.cpp */,
 			);
 			path = HelloWindow;
+			sourceTree = "<group>";
+		};
+		AB965F191D2A3B3800E0AAD2 /* HelloTriangles */ = {
+			isa = PBXGroup;
+			children = (
+				AB965F1A1D2A3B3800E0AAD2 /* main.cpp */,
+			);
+			path = HelloTriangles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +187,23 @@
 			productReference = AB965EFA1D2A0BD000E0AAD2 /* HelloWindow */;
 			productType = "com.apple.product-type.tool";
 		};
+		AB965F171D2A3B3800E0AAD2 /* HelloTriangles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB965F1C1D2A3B3800E0AAD2 /* Build configuration list for PBXNativeTarget "HelloTriangles" */;
+			buildPhases = (
+				AB965F141D2A3B3800E0AAD2 /* Sources */,
+				AB965F151D2A3B3800E0AAD2 /* Frameworks */,
+				AB965F161D2A3B3800E0AAD2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTriangles;
+			productName = HelloTriangles;
+			productReference = AB965F181D2A3B3800E0AAD2 /* HelloTriangles */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,6 +217,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					AB965EF91D2A0BD000E0AAD2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					AB965F171D2A3B3800E0AAD2 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -189,6 +238,7 @@
 			targets = (
 				AB965EEB1D2A08B600E0AAD2 /* LearnOpenGL */,
 				AB965EF91D2A0BD000E0AAD2 /* HelloWindow */,
+				AB965F171D2A3B3800E0AAD2 /* HelloTriangles */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +257,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB965EFD1D2A0BD000E0AAD2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB965F141D2A3B3800E0AAD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB965F1B1D2A3B3800E0AAD2 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +384,20 @@
 			};
 			name = Release;
 		};
+		AB965F1D1D2A3B3800E0AAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB965F1E1D2A3B3800E0AAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +423,14 @@
 			buildConfigurations = (
 				AB965EFF1D2A0BD000E0AAD2 /* Debug */,
 				AB965F001D2A0BD000E0AAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB965F1C1D2A3B3800E0AAD2 /* Build configuration list for PBXNativeTarget "HelloTriangles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB965F1D1D2A3B3800E0AAD2 /* Debug */,
+				AB965F1E1D2A3B3800E0AAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

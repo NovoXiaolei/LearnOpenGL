@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HelloTriangles.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>HelloWindow.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>AB965EF91D2A0BD000E0AAD2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB965F171D2A3B3800E0AAD2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
