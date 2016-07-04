@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		AB965EF01D2A08B600E0AAD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965EEF1D2A08B600E0AAD2 /* main.cpp */; };
+		AB965EFD1D2A0BD000E0AAD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965EFC1D2A0BD000E0AAD2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AB965EEA1D2A08B600E0AAD2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AB965EF81D2A0BD000E0AAD2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		AB965EEC1D2A08B600E0AAD2 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB965EEF1D2A08B600E0AAD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AB965EFA1D2A0BD000E0AAD2 /* HelloWindow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWindow; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB965EFC1D2A0BD000E0AAD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AB965EE91D2A08B600E0AAD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB965EF71D2A0BD000E0AAD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				AB965EEE1D2A08B600E0AAD2 /* LearnOpenGL */,
+				AB965EFB1D2A0BD000E0AAD2 /* HelloWindow */,
 				AB965EED1D2A08B600E0AAD2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				AB965EEC1D2A08B600E0AAD2 /* LearnOpenGL */,
+				AB965EFA1D2A0BD000E0AAD2 /* HelloWindow */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				AB965EEF1D2A08B600E0AAD2 /* main.cpp */,
 			);
 			path = LearnOpenGL;
+			sourceTree = "<group>";
+		};
+		AB965EFB1D2A0BD000E0AAD2 /* HelloWindow */ = {
+			isa = PBXGroup;
+			children = (
+				AB965EFC1D2A0BD000E0AAD2 /* main.cpp */,
+			);
+			path = HelloWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = AB965EEC1D2A08B600E0AAD2 /* LearnOpenGL */;
 			productType = "com.apple.product-type.tool";
 		};
+		AB965EF91D2A0BD000E0AAD2 /* HelloWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB965EFE1D2A0BD000E0AAD2 /* Build configuration list for PBXNativeTarget "HelloWindow" */;
+			buildPhases = (
+				AB965EF61D2A0BD000E0AAD2 /* Sources */,
+				AB965EF71D2A0BD000E0AAD2 /* Frameworks */,
+				AB965EF81D2A0BD000E0AAD2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloWindow;
+			productName = HelloWindow;
+			productReference = AB965EFA1D2A0BD000E0AAD2 /* HelloWindow */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				ORGANIZATIONNAME = ZhuXiaolei;
 				TargetAttributes = {
 					AB965EEB1D2A08B600E0AAD2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					AB965EF91D2A0BD000E0AAD2 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -109,6 +158,7 @@
 			projectRoot = "";
 			targets = (
 				AB965EEB1D2A08B600E0AAD2 /* LearnOpenGL */,
+				AB965EF91D2A0BD000E0AAD2 /* HelloWindow */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +169,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB965EF01D2A08B600E0AAD2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB965EF61D2A0BD000E0AAD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB965EFD1D2A0BD000E0AAD2 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +278,20 @@
 			};
 			name = Release;
 		};
+		AB965EFF1D2A0BD000E0AAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB965F001D2A0BD000E0AAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -237,6 +309,14 @@
 			buildConfigurations = (
 				AB965EF41D2A08B600E0AAD2 /* Debug */,
 				AB965EF51D2A08B600E0AAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB965EFE1D2A0BD000E0AAD2 /* Build configuration list for PBXNativeTarget "HelloWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB965EFF1D2A0BD000E0AAD2 /* Debug */,
+				AB965F001D2A0BD000E0AAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
