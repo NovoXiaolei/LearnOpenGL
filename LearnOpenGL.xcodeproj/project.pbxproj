@@ -17,6 +17,13 @@
 		AB965F111D2A37FA00E0AAD2 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F091D2A16D300E0AAD2 /* libglfw3.a */; };
 		AB965F131D2A380D00E0AAD2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F121D2A380D00E0AAD2 /* IOKit.framework */; };
 		AB965F1B1D2A3B3800E0AAD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F1A1D2A3B3800E0AAD2 /* main.cpp */; };
+		AB965F211D2A3E8E00E0AAD2 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F201D2A3E8E00E0AAD2 /* Shader.cpp */; };
+		AB965F221D2A3F7A00E0AAD2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F011D2A167500E0AAD2 /* OpenGL.framework */; };
+		AB965F231D2A3F8100E0AAD2 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F051D2A168E00E0AAD2 /* GLUT.framework */; };
+		AB965F241D2A3F8700E0AAD2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F031D2A168A00E0AAD2 /* Cocoa.framework */; };
+		AB965F251D2A3F8D00E0AAD2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F121D2A380D00E0AAD2 /* IOKit.framework */; };
+		AB965F261D2A3F9600E0AAD2 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F091D2A16D300E0AAD2 /* libglfw3.a */; };
+		AB965F271D2A3F9E00E0AAD2 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F071D2A16B900E0AAD2 /* libGLEW.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +71,8 @@
 		AB965F121D2A380D00E0AAD2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		AB965F181D2A3B3800E0AAD2 /* HelloTriangles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangles; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB965F1A1D2A3B3800E0AAD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AB965F1F1D2A3E7000E0AAD2 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		AB965F201D2A3E8E00E0AAD2 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +101,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB965F271D2A3F9E00E0AAD2 /* libGLEW.a in Frameworks */,
+				AB965F261D2A3F9600E0AAD2 /* libglfw3.a in Frameworks */,
+				AB965F251D2A3F8D00E0AAD2 /* IOKit.framework in Frameworks */,
+				AB965F241D2A3F8700E0AAD2 /* Cocoa.framework in Frameworks */,
+				AB965F231D2A3F8100E0AAD2 /* GLUT.framework in Frameworks */,
+				AB965F221D2A3F7A00E0AAD2 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +116,8 @@
 		AB965EE31D2A08B600E0AAD2 = {
 			isa = PBXGroup;
 			children = (
+				AB965F201D2A3E8E00E0AAD2 /* Shader.cpp */,
+				AB965F1F1D2A3E7000E0AAD2 /* Shader.h */,
 				AB965F121D2A380D00E0AAD2 /* IOKit.framework */,
 				AB965F0D1D2A196900E0AAD2 /* libGLEW.a */,
 				AB965F0B1D2A175C00E0AAD2 /* CoreVideo.framework */,
@@ -248,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB965F211D2A3E8E00E0AAD2 /* Shader.cpp in Sources */,
 				AB965EF01D2A08B600E0AAD2 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +405,11 @@
 		AB965F1D1D2A3B3800E0AAD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glew/1.13.0/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -394,6 +417,11 @@
 		AB965F1E1D2A3B3800E0AAD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glew/1.13.0/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
