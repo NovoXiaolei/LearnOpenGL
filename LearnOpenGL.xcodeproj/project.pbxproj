@@ -24,6 +24,7 @@
 		AB965F251D2A3F8D00E0AAD2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F121D2A380D00E0AAD2 /* IOKit.framework */; };
 		AB965F261D2A3F9600E0AAD2 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F091D2A16D300E0AAD2 /* libglfw3.a */; };
 		AB965F271D2A3F9E00E0AAD2 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F071D2A16B900E0AAD2 /* libGLEW.a */; };
+		AB965F281D2A712D00E0AAD2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F0B1D2A175C00E0AAD2 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -101,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB965F281D2A712D00E0AAD2 /* CoreVideo.framework in Frameworks */,
 				AB965F271D2A3F9E00E0AAD2 /* libGLEW.a in Frameworks */,
 				AB965F261D2A3F9600E0AAD2 /* libglfw3.a in Frameworks */,
 				AB965F251D2A3F8D00E0AAD2 /* IOKit.framework in Frameworks */,
@@ -406,10 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = /usr/local/include;
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/usr/local/Cellar/glew/1.13.0/lib,
-				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -418,10 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = /usr/local/include;
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/usr/local/Cellar/glew/1.13.0/lib,
-				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

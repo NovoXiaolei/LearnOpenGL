@@ -8,7 +8,14 @@
 
 using namespace std;
 
-#include <GL/glew.h>; // 包含glew获取所有的OpenGL必要headers
+#include <iostream>
+
+// GLEW
+#define GLEW_STATIC
+#include <GL/glew.h>
+
+// GLFW
+#include <GLFW/glfw3.h>
 
 class Shader
 {
