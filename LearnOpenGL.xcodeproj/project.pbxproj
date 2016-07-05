@@ -28,6 +28,7 @@
 		AB965F361D2B646B00E0AAD2 /* BaseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F351D2B646B00E0AAD2 /* BaseTest.cpp */; };
 		AB965F3B1D2B76FF00E0AAD2 /* Triangle1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F3A1D2B76FF00E0AAD2 /* Triangle1.cpp */; };
 		AB965F3E1D2B782D00E0AAD2 /* Triangle2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F3D1D2B782D00E0AAD2 /* Triangle2.cpp */; };
+		AB965F471D2C095E00E0AAD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F461D2C095E00E0AAD2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		AB965F161D2A3B3800E0AAD2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AB965F421D2C095E00E0AAD2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -85,6 +95,9 @@
 		AB965F3A1D2B76FF00E0AAD2 /* Triangle1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle1.cpp; sourceTree = "<group>"; };
 		AB965F3C1D2B781600E0AAD2 /* Triangle2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Triangle2.h; sourceTree = "<group>"; };
 		AB965F3D1D2B782D00E0AAD2 /* Triangle2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle2.cpp; sourceTree = "<group>"; };
+		AB965F441D2C095E00E0AAD2 /* Texture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Texture; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB965F461D2C095E00E0AAD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AB965F4B1D2C098300E0AAD2 /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +136,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB965F411D2C095E00E0AAD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -144,6 +164,7 @@
 				AB965EEE1D2A08B600E0AAD2 /* LearnOpenGL */,
 				AB965EFB1D2A0BD000E0AAD2 /* HelloWindow */,
 				AB965F191D2A3B3800E0AAD2 /* HelloTriangles */,
+				AB965F451D2C095E00E0AAD2 /* Texture */,
 				AB965EED1D2A08B600E0AAD2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -154,6 +175,7 @@
 				AB965EEC1D2A08B600E0AAD2 /* LearnOpenGL */,
 				AB965EFA1D2A0BD000E0AAD2 /* HelloWindow */,
 				AB965F181D2A3B3800E0AAD2 /* HelloTriangles */,
+				AB965F441D2C095E00E0AAD2 /* Texture */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +208,15 @@
 				AB965F3D1D2B782D00E0AAD2 /* Triangle2.cpp */,
 			);
 			path = HelloTriangles;
+			sourceTree = "<group>";
+		};
+		AB965F451D2C095E00E0AAD2 /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				AB965F4B1D2C098300E0AAD2 /* wall.jpg */,
+				AB965F461D2C095E00E0AAD2 /* main.cpp */,
+			);
+			path = Texture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +273,23 @@
 			productReference = AB965F181D2A3B3800E0AAD2 /* HelloTriangles */;
 			productType = "com.apple.product-type.tool";
 		};
+		AB965F431D2C095E00E0AAD2 /* Texture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB965F481D2C095E00E0AAD2 /* Build configuration list for PBXNativeTarget "Texture" */;
+			buildPhases = (
+				AB965F401D2C095E00E0AAD2 /* Sources */,
+				AB965F411D2C095E00E0AAD2 /* Frameworks */,
+				AB965F421D2C095E00E0AAD2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Texture;
+			productName = Texture;
+			productReference = AB965F441D2C095E00E0AAD2 /* Texture */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -258,6 +306,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					AB965F171D2A3B3800E0AAD2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					AB965F431D2C095E00E0AAD2 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -277,6 +328,7 @@
 				AB965EEB1D2A08B600E0AAD2 /* LearnOpenGL */,
 				AB965EF91D2A0BD000E0AAD2 /* HelloWindow */,
 				AB965F171D2A3B3800E0AAD2 /* HelloTriangles */,
+				AB965F431D2C095E00E0AAD2 /* Texture */,
 			);
 		};
 /* End PBXProject section */
@@ -307,6 +359,14 @@
 				AB965F3B1D2B76FF00E0AAD2 /* Triangle1.cpp in Sources */,
 				AB965F331D2AA80A00E0AAD2 /* Shader.cpp in Sources */,
 				AB965F1B1D2A3B3800E0AAD2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB965F401D2C095E00E0AAD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB965F471D2C095E00E0AAD2 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +504,20 @@
 			};
 			name = Release;
 		};
+		AB965F491D2C095E00E0AAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB965F4A1D2C095E00E0AAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -477,6 +551,14 @@
 			buildConfigurations = (
 				AB965F1D1D2A3B3800E0AAD2 /* Debug */,
 				AB965F1E1D2A3B3800E0AAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB965F481D2C095E00E0AAD2 /* Build configuration list for PBXNativeTarget "Texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB965F491D2C095E00E0AAD2 /* Debug */,
+				AB965F4A1D2C095E00E0AAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
