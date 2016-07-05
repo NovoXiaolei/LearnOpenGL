@@ -7,6 +7,7 @@
 //
 #include "../Shader.h"
 #include "Triangle1.h"
+#include "Triangle2.h"
 
 const GLuint WIDTH = 800;
 const GLuint HEIGHT = 600;
@@ -40,7 +41,8 @@ int main(int argc, const char * argv[]) {
 		return -1;
 	}
 
-    Triangle1 triangle;
+    //Triangle1 triangle;
+    Triangle2 triangle2;
     
 	while (!glfwWindowShouldClose(window))
     {
@@ -50,7 +52,7 @@ int main(int argc, const char * argv[]) {
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         
-        triangle.update();
+        triangle2.update();
     	
         // Swap the screen buffers
         glfwSwapBuffers(window);
