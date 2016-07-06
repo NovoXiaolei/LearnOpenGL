@@ -22,13 +22,26 @@
 		AB965F241D2A3F8700E0AAD2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F031D2A168A00E0AAD2 /* Cocoa.framework */; };
 		AB965F251D2A3F8D00E0AAD2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F121D2A380D00E0AAD2 /* IOKit.framework */; };
 		AB965F261D2A3F9600E0AAD2 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F091D2A16D300E0AAD2 /* libglfw3.a */; };
-		AB965F271D2A3F9E00E0AAD2 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F071D2A16B900E0AAD2 /* libGLEW.a */; };
 		AB965F281D2A712D00E0AAD2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F0B1D2A175C00E0AAD2 /* CoreVideo.framework */; };
 		AB965F331D2AA80A00E0AAD2 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F321D2AA80A00E0AAD2 /* Shader.cpp */; };
 		AB965F361D2B646B00E0AAD2 /* BaseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F351D2B646B00E0AAD2 /* BaseTest.cpp */; };
 		AB965F3B1D2B76FF00E0AAD2 /* Triangle1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F3A1D2B76FF00E0AAD2 /* Triangle1.cpp */; };
 		AB965F3E1D2B782D00E0AAD2 /* Triangle2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F3D1D2B782D00E0AAD2 /* Triangle2.cpp */; };
 		AB965F471D2C095E00E0AAD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F461D2C095E00E0AAD2 /* main.cpp */; };
+		AB965F4E1D2CD70400E0AAD2 /* TextureTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F4D1D2CD70400E0AAD2 /* TextureTest.cpp */; };
+		AB965F4F1D2CE3F200E0AAD2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F121D2A380D00E0AAD2 /* IOKit.framework */; };
+		AB965F501D2CE3FA00E0AAD2 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F0D1D2A196900E0AAD2 /* libGLEW.a */; };
+		AB965F511D2CE3FE00E0AAD2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F0B1D2A175C00E0AAD2 /* CoreVideo.framework */; };
+		AB965F521D2CE41000E0AAD2 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F091D2A16D300E0AAD2 /* libglfw3.a */; };
+		AB965F541D2CE41A00E0AAD2 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F051D2A168E00E0AAD2 /* GLUT.framework */; };
+		AB965F551D2CE41E00E0AAD2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F031D2A168A00E0AAD2 /* Cocoa.framework */; };
+		AB965F561D2CE42300E0AAD2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F011D2A167500E0AAD2 /* OpenGL.framework */; };
+		AB965F591D2CE52400E0AAD2 /* BaseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F351D2B646B00E0AAD2 /* BaseTest.cpp */; };
+		AB965F5A1D2CE52400E0AAD2 /* BaseTest.h in Sources */ = {isa = PBXBuildFile; fileRef = AB965F341D2B642500E0AAD2 /* BaseTest.h */; };
+		AB965F5B1D2CE52400E0AAD2 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F321D2AA80A00E0AAD2 /* Shader.cpp */; };
+		AB965F5C1D2CE52400E0AAD2 /* Shader.h in Sources */ = {isa = PBXBuildFile; fileRef = AB965F311D2AA7E900E0AAD2 /* Shader.h */; };
+		AB965F5D1D2CE58B00E0AAD2 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F0D1D2A196900E0AAD2 /* libGLEW.a */; };
+		AB965F891D2CE8AA00E0AAD2 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F881D2CE8AA00E0AAD2 /* libSOIL.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,7 +91,6 @@
 		AB965F011D2A167500E0AAD2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		AB965F031D2A168A00E0AAD2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AB965F051D2A168E00E0AAD2 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		AB965F071D2A16B900E0AAD2 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../../usr/local/Cellar/glew/1.13.0/lib/libGLEW.a; sourceTree = "<group>"; };
 		AB965F091D2A16D300E0AAD2 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
 		AB965F0B1D2A175C00E0AAD2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		AB965F0D1D2A196900E0AAD2 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../../usr/local/lib/libGLEW.a; sourceTree = "<group>"; };
@@ -98,6 +110,9 @@
 		AB965F441D2C095E00E0AAD2 /* Texture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Texture; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB965F461D2C095E00E0AAD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AB965F4B1D2C098300E0AAD2 /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall.jpg; sourceTree = "<group>"; };
+		AB965F4C1D2CD69C00E0AAD2 /* TextureTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureTest.h; sourceTree = "<group>"; };
+		AB965F4D1D2CD70400E0AAD2 /* TextureTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureTest.cpp; sourceTree = "<group>"; };
+		AB965F881D2CE8AA00E0AAD2 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = ../../../../../usr/local/lib/libSOIL.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB965F5D1D2CE58B00E0AAD2 /* libGLEW.a in Frameworks */,
 				AB965F281D2A712D00E0AAD2 /* CoreVideo.framework in Frameworks */,
-				AB965F271D2A3F9E00E0AAD2 /* libGLEW.a in Frameworks */,
 				AB965F261D2A3F9600E0AAD2 /* libglfw3.a in Frameworks */,
 				AB965F251D2A3F8D00E0AAD2 /* IOKit.framework in Frameworks */,
 				AB965F241D2A3F8700E0AAD2 /* Cocoa.framework in Frameworks */,
@@ -140,6 +155,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB965F891D2CE8AA00E0AAD2 /* libSOIL.a in Frameworks */,
+				AB965F501D2CE3FA00E0AAD2 /* libGLEW.a in Frameworks */,
+				AB965F541D2CE41A00E0AAD2 /* GLUT.framework in Frameworks */,
+				AB965F521D2CE41000E0AAD2 /* libglfw3.a in Frameworks */,
+				AB965F511D2CE3FE00E0AAD2 /* CoreVideo.framework in Frameworks */,
+				AB965F4F1D2CE3F200E0AAD2 /* IOKit.framework in Frameworks */,
+				AB965F551D2CE41E00E0AAD2 /* Cocoa.framework in Frameworks */,
+				AB965F561D2CE42300E0AAD2 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +172,7 @@
 		AB965EE31D2A08B600E0AAD2 = {
 			isa = PBXGroup;
 			children = (
+				AB965F881D2CE8AA00E0AAD2 /* libSOIL.a */,
 				AB965F351D2B646B00E0AAD2 /* BaseTest.cpp */,
 				AB965F341D2B642500E0AAD2 /* BaseTest.h */,
 				AB965F321D2AA80A00E0AAD2 /* Shader.cpp */,
@@ -157,7 +181,6 @@
 				AB965F0D1D2A196900E0AAD2 /* libGLEW.a */,
 				AB965F0B1D2A175C00E0AAD2 /* CoreVideo.framework */,
 				AB965F091D2A16D300E0AAD2 /* libglfw3.a */,
-				AB965F071D2A16B900E0AAD2 /* libGLEW.a */,
 				AB965F051D2A168E00E0AAD2 /* GLUT.framework */,
 				AB965F031D2A168A00E0AAD2 /* Cocoa.framework */,
 				AB965F011D2A167500E0AAD2 /* OpenGL.framework */,
@@ -215,6 +238,8 @@
 			children = (
 				AB965F4B1D2C098300E0AAD2 /* wall.jpg */,
 				AB965F461D2C095E00E0AAD2 /* main.cpp */,
+				AB965F4C1D2CD69C00E0AAD2 /* TextureTest.h */,
+				AB965F4D1D2CD70400E0AAD2 /* TextureTest.cpp */,
 			);
 			path = Texture;
 			sourceTree = "<group>";
@@ -366,7 +391,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB965F591D2CE52400E0AAD2 /* BaseTest.cpp in Sources */,
+				AB965F5A1D2CE52400E0AAD2 /* BaseTest.h in Sources */,
+				AB965F5B1D2CE52400E0AAD2 /* Shader.cpp in Sources */,
+				AB965F5C1D2CE52400E0AAD2 /* Shader.h in Sources */,
 				AB965F471D2C095E00E0AAD2 /* main.cpp in Sources */,
+				AB965F4E1D2CD70400E0AAD2 /* TextureTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +537,8 @@
 		AB965F491D2C095E00E0AAD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -514,6 +546,8 @@
 		AB965F4A1D2C095E00E0AAD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
