@@ -19,11 +19,20 @@ public:
     }
     
     ~TextureTest(){
+        delete _shader;
         
+        glDeleteVertexArrays(1, &VAO);
+        glDeleteBuffers(1, &VBO);
+        glDeleteBuffers(1, &EBO);
     }
     
     virtual void init();
     virtual void update();
+    
+protected:
+    Shader* _shader = nullptr;
+    GLuint VBO, VAO, EBO;
+    GLuint _texture;
 };
 
 

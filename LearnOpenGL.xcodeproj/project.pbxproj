@@ -41,7 +41,7 @@
 		AB965F5B1D2CE52400E0AAD2 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F321D2AA80A00E0AAD2 /* Shader.cpp */; };
 		AB965F5C1D2CE52400E0AAD2 /* Shader.h in Sources */ = {isa = PBXBuildFile; fileRef = AB965F311D2AA7E900E0AAD2 /* Shader.h */; };
 		AB965F5D1D2CE58B00E0AAD2 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F0D1D2A196900E0AAD2 /* libGLEW.a */; };
-		AB965F891D2CE8AA00E0AAD2 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F881D2CE8AA00E0AAD2 /* libSOIL.a */; };
+		ABE78E7E1D2D0EA20085980C /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE78E7D1D2D0EA20085980C /* libSOIL.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,8 +65,8 @@
 		};
 		AB965F161D2A3B3800E0AAD2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 8;
+			dstPath = usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -97,8 +97,6 @@
 		AB965F121D2A380D00E0AAD2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		AB965F181D2A3B3800E0AAD2 /* HelloTriangles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangles; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB965F1A1D2A3B3800E0AAD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		AB965F2C1D2AA3DA00E0AAD2 /* triangles.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = triangles.frag; sourceTree = "<group>"; };
-		AB965F2D1D2AA3DA00E0AAD2 /* triangles.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = triangles.vert; sourceTree = "<group>"; };
 		AB965F311D2AA7E900E0AAD2 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 		AB965F321D2AA80A00E0AAD2 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		AB965F341D2B642500E0AAD2 /* BaseTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTest.h; sourceTree = "<group>"; };
@@ -112,7 +110,12 @@
 		AB965F4B1D2C098300E0AAD2 /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall.jpg; sourceTree = "<group>"; };
 		AB965F4C1D2CD69C00E0AAD2 /* TextureTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureTest.h; sourceTree = "<group>"; };
 		AB965F4D1D2CD70400E0AAD2 /* TextureTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureTest.cpp; sourceTree = "<group>"; };
-		AB965F881D2CE8AA00E0AAD2 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = ../../../../../usr/local/lib/libSOIL.a; sourceTree = "<group>"; };
+		AB965F8C1D2CF37300E0AAD2 /* texture.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = texture.frag; sourceTree = "<group>"; };
+		AB965F8D1D2CF37300E0AAD2 /* texture.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = texture.vert; sourceTree = "<group>"; };
+		AB965F931D2CF63B00E0AAD2 /* triangles.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = triangles.frag; sourceTree = "<group>"; };
+		AB965F941D2CF63B00E0AAD2 /* triangles.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = triangles.vert; sourceTree = "<group>"; };
+		AB965F951D2CF63B00E0AAD2 /* yellow.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = yellow.frag; sourceTree = "<group>"; };
+		ABE78E7D1D2D0EA20085980C /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = ../../../../../usr/local/lib/libSOIL.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB965F891D2CE8AA00E0AAD2 /* libSOIL.a in Frameworks */,
+				ABE78E7E1D2D0EA20085980C /* libSOIL.a in Frameworks */,
 				AB965F501D2CE3FA00E0AAD2 /* libGLEW.a in Frameworks */,
 				AB965F541D2CE41A00E0AAD2 /* GLUT.framework in Frameworks */,
 				AB965F521D2CE41000E0AAD2 /* libglfw3.a in Frameworks */,
@@ -172,7 +175,7 @@
 		AB965EE31D2A08B600E0AAD2 = {
 			isa = PBXGroup;
 			children = (
-				AB965F881D2CE8AA00E0AAD2 /* libSOIL.a */,
+				ABE78E7D1D2D0EA20085980C /* libSOIL.a */,
 				AB965F351D2B646B00E0AAD2 /* BaseTest.cpp */,
 				AB965F341D2B642500E0AAD2 /* BaseTest.h */,
 				AB965F321D2AA80A00E0AAD2 /* Shader.cpp */,
@@ -222,9 +225,10 @@
 		AB965F191D2A3B3800E0AAD2 /* HelloTriangles */ = {
 			isa = PBXGroup;
 			children = (
+				AB965F931D2CF63B00E0AAD2 /* triangles.frag */,
+				AB965F941D2CF63B00E0AAD2 /* triangles.vert */,
+				AB965F951D2CF63B00E0AAD2 /* yellow.frag */,
 				AB965F3A1D2B76FF00E0AAD2 /* Triangle1.cpp */,
-				AB965F2C1D2AA3DA00E0AAD2 /* triangles.frag */,
-				AB965F2D1D2AA3DA00E0AAD2 /* triangles.vert */,
 				AB965F1A1D2A3B3800E0AAD2 /* main.cpp */,
 				AB965F371D2B6F7100E0AAD2 /* Triangle1.h */,
 				AB965F3C1D2B781600E0AAD2 /* Triangle2.h */,
@@ -236,6 +240,8 @@
 		AB965F451D2C095E00E0AAD2 /* Texture */ = {
 			isa = PBXGroup;
 			children = (
+				AB965F8C1D2CF37300E0AAD2 /* texture.frag */,
+				AB965F8D1D2CF37300E0AAD2 /* texture.vert */,
 				AB965F4B1D2C098300E0AAD2 /* wall.jpg */,
 				AB965F461D2C095E00E0AAD2 /* main.cpp */,
 				AB965F4C1D2CD69C00E0AAD2 /* TextureTest.h */,
@@ -321,6 +327,9 @@
 		AB965EE41D2A08B600E0AAD2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = ZhuXiaolei;
 				TargetAttributes = {
@@ -519,18 +528,22 @@
 		AB965F1D1D2A3B3800E0AAD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		AB965F1E1D2A3B3800E0AAD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -571,6 +584,7 @@
 				AB965EF51D2A08B600E0AAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB965EFE1D2A0BD000E0AAD2 /* Build configuration list for PBXNativeTarget "HelloWindow" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +593,7 @@
 				AB965F001D2A0BD000E0AAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB965F1C1D2A3B3800E0AAD2 /* Build configuration list for PBXNativeTarget "HelloTriangles" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +602,7 @@
 				AB965F1E1D2A3B3800E0AAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB965F481D2C095E00E0AAD2 /* Build configuration list for PBXNativeTarget "Texture" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +611,7 @@
 				AB965F4A1D2C095E00E0AAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
