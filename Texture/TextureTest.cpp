@@ -29,6 +29,10 @@ void TextureTest::init(){
         1, 2, 3  // Second Triangle
     };
     
+    _shader = new Shader("/Users/xiaolei/Develop/GitHub/LearnOpenGL/Texture/texture.vert",
+                         "/Users/xiaolei/Develop/GitHub/LearnOpenGL/Texture/texture.frag");
+    
+    
     glGenVertexArrays(1,&VAO);
     glGenBuffers(1,&VBO);
     glGenBuffers(1, &EBO);
@@ -72,8 +76,6 @@ void TextureTest::init(){
     SOIL_free_image_data(image);
     glBindTexture(GL_TEXTURE_2D, 0);
     
-    _shader = new Shader("/Users/xiaolei/Develop/GitHub/LearnOpenGL/Texture/texture.vert",
-                         "/Users/xiaolei/Develop/GitHub/LearnOpenGL/Texture/texture.frag");
     
 }
 

@@ -6,7 +6,7 @@ out vec3 ourColor;
 out vec2 TexCoord;
 void main()
 {
-	gl_position = vec4(position, 1.0f);
+	gl_Position = vec4(position, 1.0f);
 	ourColor = color;
 	TexCoord = texCoord;
 }
