@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0F9C901D2E21C40021ACDC /* TextureTest1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB0F9C8E1D2E21C40021ACDC /* TextureTest1.cpp */; };
 		AB965EF01D2A08B600E0AAD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965EEF1D2A08B600E0AAD2 /* main.cpp */; };
 		AB965EFD1D2A0BD000E0AAD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965EFC1D2A0BD000E0AAD2 /* main.cpp */; };
 		AB965F021D2A167500E0AAD2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F011D2A167500E0AAD2 /* OpenGL.framework */; };
@@ -84,6 +85,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB0F9C8D1D2E1FE20021ACDC /* texture1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture1.frag; sourceTree = "<group>"; };
+		AB0F9C8E1D2E21C40021ACDC /* TextureTest1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureTest1.cpp; sourceTree = "<group>"; };
+		AB0F9C8F1D2E21C40021ACDC /* TextureTest1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureTest1.h; sourceTree = "<group>"; };
 		AB965EEC1D2A08B600E0AAD2 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB965EEF1D2A08B600E0AAD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AB965EFA1D2A0BD000E0AAD2 /* HelloWindow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWindow; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +244,9 @@
 		AB965F451D2C095E00E0AAD2 /* Texture */ = {
 			isa = PBXGroup;
 			children = (
+				AB0F9C8E1D2E21C40021ACDC /* TextureTest1.cpp */,
+				AB0F9C8F1D2E21C40021ACDC /* TextureTest1.h */,
+				AB0F9C8D1D2E1FE20021ACDC /* texture1.frag */,
 				AB965F8C1D2CF37300E0AAD2 /* texture.frag */,
 				AB965F8D1D2CF37300E0AAD2 /* texture.vert */,
 				AB965F4B1D2C098300E0AAD2 /* wall.jpg */,
@@ -405,6 +412,7 @@
 				AB965F5B1D2CE52400E0AAD2 /* Shader.cpp in Sources */,
 				AB965F5C1D2CE52400E0AAD2 /* Shader.h in Sources */,
 				AB965F471D2C095E00E0AAD2 /* main.cpp in Sources */,
+				AB0F9C901D2E21C40021ACDC /* TextureTest1.cpp in Sources */,
 				AB965F4E1D2CD70400E0AAD2 /* TextureTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

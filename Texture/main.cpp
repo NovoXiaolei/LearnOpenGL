@@ -6,6 +6,7 @@
 //  Copyright © 2016 ZhuXiaolei. All rights reserved.
 //
 #include "TextureTest.h"
+#include "TextureTest1.h"
 
 const GLuint WIDTH = 800;
 const GLuint HEIGHT = 600;
