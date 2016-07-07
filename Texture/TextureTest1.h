@@ -25,7 +25,7 @@ public:
 protected:
     Shader* _shader = nullptr;
     GLuint VBO, VAO, EBO;
-    GLuint _texture;
+    GLuint _texture1, _texture2;
 
 };
 

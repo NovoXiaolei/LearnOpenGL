@@ -88,6 +88,8 @@
 		AB0F9C8D1D2E1FE20021ACDC /* texture1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture1.frag; sourceTree = "<group>"; };
 		AB0F9C8E1D2E21C40021ACDC /* TextureTest1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureTest1.cpp; sourceTree = "<group>"; };
 		AB0F9C8F1D2E21C40021ACDC /* TextureTest1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureTest1.h; sourceTree = "<group>"; };
+		AB0F9C911D2E24A20021ACDC /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		AB0F9C921D2E271E0021ACDC /* texture1.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = texture1.vert; sourceTree = "<group>"; };
 		AB965EEC1D2A08B600E0AAD2 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB965EEF1D2A08B600E0AAD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AB965EFA1D2A0BD000E0AAD2 /* HelloWindow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWindow; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +246,8 @@
 		AB965F451D2C095E00E0AAD2 /* Texture */ = {
 			isa = PBXGroup;
 			children = (
+				AB0F9C921D2E271E0021ACDC /* texture1.vert */,
+				AB0F9C911D2E24A20021ACDC /* cat.jpg */,
 				AB0F9C8E1D2E21C40021ACDC /* TextureTest1.cpp */,
 				AB0F9C8F1D2E21C40021ACDC /* TextureTest1.h */,
 				AB0F9C8D1D2E1FE20021ACDC /* texture1.frag */,

@@ -41,7 +41,7 @@ int main(int argc, const char * argv[]) {
         return -1;
     }
     
-    TextureTest test;
+    TextureTest1 test;
     
     while (!glfwWindowShouldClose(window))
     {
