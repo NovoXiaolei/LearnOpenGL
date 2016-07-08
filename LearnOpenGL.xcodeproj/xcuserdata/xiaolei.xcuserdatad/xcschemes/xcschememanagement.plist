@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CarmeaTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>HelloTriangles.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -53,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>ABFA7FA41D2F5C0600E9F51D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ABFA7FCB1D2F8EB800E9F51D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
