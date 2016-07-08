@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Matrix.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Texture.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>AB965F431D2C095E00E0AAD2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ABFA7FA41D2F5C0600E9F51D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
