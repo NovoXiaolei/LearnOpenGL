@@ -47,9 +47,6 @@ int main(int argc, const char * argv[]) {
         // Check if any events have been activiated (key pressed, mouse moved etc.) and call corresponding response functions
         glfwPollEvents();
         
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-        
         test.update();
         // Swap the screen buffers
         glfwSwapBuffers(window);
