@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LightTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Matrix.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -63,6 +68,11 @@
 			<true/>
 		</dict>
 		<key>ABFA7FCB1D2F8EB800E9F51D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ABFA7FE71D322C8100E9F51D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

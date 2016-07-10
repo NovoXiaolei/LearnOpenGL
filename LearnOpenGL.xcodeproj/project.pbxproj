@@ -72,6 +72,22 @@
 		ABFA7FE11D2F940300E9F51D /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F321D2AA80A00E0AAD2 /* Shader.cpp */; };
 		ABFA7FE21D2F940300E9F51D /* Shader.h in Sources */ = {isa = PBXBuildFile; fileRef = AB965F311D2AA7E900E0AAD2 /* Shader.h */; };
 		ABFA7FE31D2F947E00E9F51D /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F091D2A16D300E0AAD2 /* libglfw3.a */; };
+		ABFA7FEB1D322C8100E9F51D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABFA7FEA1D322C8100E9F51D /* main.cpp */; };
+		ABFA7FEF1D322CA300E9F51D /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE78E7D1D2D0EA20085980C /* libSOIL.a */; };
+		ABFA7FF01D322CA700E9F51D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F121D2A380D00E0AAD2 /* IOKit.framework */; };
+		ABFA7FF11D322CAA00E9F51D /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F0D1D2A196900E0AAD2 /* libGLEW.a */; };
+		ABFA7FF21D322CAD00E9F51D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F0B1D2A175C00E0AAD2 /* CoreVideo.framework */; };
+		ABFA7FF31D322CB100E9F51D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F051D2A168E00E0AAD2 /* GLUT.framework */; };
+		ABFA7FF41D322CB400E9F51D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F031D2A168A00E0AAD2 /* Cocoa.framework */; };
+		ABFA7FF51D322CB800E9F51D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F011D2A167500E0AAD2 /* OpenGL.framework */; };
+		ABFA7FF61D322CC600E9F51D /* BaseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F351D2B646B00E0AAD2 /* BaseTest.cpp */; };
+		ABFA7FF71D322CC600E9F51D /* BaseTest.h in Sources */ = {isa = PBXBuildFile; fileRef = AB965F341D2B642500E0AAD2 /* BaseTest.h */; };
+		ABFA7FF81D322CC600E9F51D /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F321D2AA80A00E0AAD2 /* Shader.cpp */; };
+		ABFA7FF91D322CC600E9F51D /* Shader.h in Sources */ = {isa = PBXBuildFile; fileRef = AB965F311D2AA7E900E0AAD2 /* Shader.h */; };
+		ABFA7FFC1D322D2600E9F51D /* LightTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABFA7FFA1D322D2600E9F51D /* LightTest.cpp */; };
+		ABFA80021D329C1300E9F51D /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = ABFA80011D329B6A00E9F51D /* Camera.h */; };
+		ABFA80031D329FC600E9F51D /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F091D2A16D300E0AAD2 /* libglfw3.a */; };
+		ABFA80041D32A4E100E9F51D /* LightTest.h in Sources */ = {isa = PBXBuildFile; fileRef = ABFA7FFB1D322D2600E9F51D /* LightTest.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -121,6 +137,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		ABFA7FCA1D2F8EB800E9F51D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		ABFA7FE61D322C8100E9F51D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -435,6 +460,15 @@
 		ABFA7FDB1D2F93F600E9F51D /* MatrixTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTest.h; sourceTree = "<group>"; };
 		ABFA7FDC1D2F93F600E9F51D /* texture1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture1.frag; sourceTree = "<group>"; };
 		ABFA7FDD1D2F93F600E9F51D /* texture1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture1.vert; sourceTree = "<group>"; };
+		ABFA7FE81D322C8100E9F51D /* LightTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LightTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABFA7FEA1D322C8100E9F51D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		ABFA7FFA1D322D2600E9F51D /* LightTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightTest.cpp; sourceTree = "<group>"; };
+		ABFA7FFB1D322D2600E9F51D /* LightTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightTest.h; sourceTree = "<group>"; };
+		ABFA7FFD1D3295FD00E9F51D /* light.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = light.frag; sourceTree = "<group>"; };
+		ABFA7FFE1D3295FD00E9F51D /* light.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = light.vert; sourceTree = "<group>"; };
+		ABFA7FFF1D3298DB00E9F51D /* lamp.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lamp.frag; sourceTree = "<group>"; };
+		ABFA80001D3298DB00E9F51D /* lamp.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lamp.vert; sourceTree = "<group>"; };
+		ABFA80011D329B6A00E9F51D /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +549,21 @@
 				ABFA7FD71D2F8F0F00E9F51D /* GLUT.framework in Frameworks */,
 				ABFA7FD81D2F8F1200E9F51D /* Cocoa.framework in Frameworks */,
 				ABFA7FD91D2F8F1D00E9F51D /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABFA7FE51D322C8100E9F51D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABFA7FEF1D322CA300E9F51D /* libSOIL.a in Frameworks */,
+				ABFA80031D329FC600E9F51D /* libglfw3.a in Frameworks */,
+				ABFA7FF01D322CA700E9F51D /* IOKit.framework in Frameworks */,
+				ABFA7FF11D322CAA00E9F51D /* libGLEW.a in Frameworks */,
+				ABFA7FF21D322CAD00E9F51D /* CoreVideo.framework in Frameworks */,
+				ABFA7FF31D322CB100E9F51D /* GLUT.framework in Frameworks */,
+				ABFA7FF41D322CB400E9F51D /* Cocoa.framework in Frameworks */,
+				ABFA7FF51D322CB800E9F51D /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +858,7 @@
 		AB965EE31D2A08B600E0AAD2 = {
 			isa = PBXGroup;
 			children = (
+				ABFA80011D329B6A00E9F51D /* Camera.h */,
 				AB0F9C931D2E426E0021ACDC /* glm */,
 				ABE78E7D1D2D0EA20085980C /* libSOIL.a */,
 				AB965F351D2B646B00E0AAD2 /* BaseTest.cpp */,
@@ -828,6 +878,7 @@
 				AB965F451D2C095E00E0AAD2 /* Texture */,
 				ABFA7FA61D2F5C0600E9F51D /* Matrix */,
 				ABFA7FCD1D2F8EB800E9F51D /* CarmeaTest */,
+				ABFA7FE91D322C8100E9F51D /* LightTest */,
 				AB965EED1D2A08B600E0AAD2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -841,6 +892,7 @@
 				AB965F441D2C095E00E0AAD2 /* Texture */,
 				ABFA7FA51D2F5C0600E9F51D /* Matrix */,
 				ABFA7FCC1D2F8EB800E9F51D /* CarmeaTest */,
+				ABFA7FE81D322C8100E9F51D /* LightTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -916,6 +968,20 @@
 				ABFA7FCE1D2F8EB800E9F51D /* main.cpp */,
 			);
 			path = CarmeaTest;
+			sourceTree = "<group>";
+		};
+		ABFA7FE91D322C8100E9F51D /* LightTest */ = {
+			isa = PBXGroup;
+			children = (
+				ABFA7FFF1D3298DB00E9F51D /* lamp.frag */,
+				ABFA80001D3298DB00E9F51D /* lamp.vert */,
+				ABFA7FFD1D3295FD00E9F51D /* light.frag */,
+				ABFA7FFE1D3295FD00E9F51D /* light.vert */,
+				ABFA7FFA1D322D2600E9F51D /* LightTest.cpp */,
+				ABFA7FFB1D322D2600E9F51D /* LightTest.h */,
+				ABFA7FEA1D322C8100E9F51D /* main.cpp */,
+			);
+			path = LightTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1023,6 +1089,23 @@
 			productReference = ABFA7FCC1D2F8EB800E9F51D /* CarmeaTest */;
 			productType = "com.apple.product-type.tool";
 		};
+		ABFA7FE71D322C8100E9F51D /* LightTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABFA7FEC1D322C8100E9F51D /* Build configuration list for PBXNativeTarget "LightTest" */;
+			buildPhases = (
+				ABFA7FE41D322C8100E9F51D /* Sources */,
+				ABFA7FE51D322C8100E9F51D /* Frameworks */,
+				ABFA7FE61D322C8100E9F51D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightTest;
+			productName = LightTest;
+			productReference = ABFA7FE81D322C8100E9F51D /* LightTest */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1053,6 +1136,9 @@
 					ABFA7FCB1D2F8EB800E9F51D = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					ABFA7FE71D322C8100E9F51D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = AB965EE71D2A08B600E0AAD2 /* Build configuration list for PBXProject "LearnOpenGL" */;
@@ -1073,6 +1159,7 @@
 				AB965F431D2C095E00E0AAD2 /* Texture */,
 				ABFA7FA41D2F5C0600E9F51D /* Matrix */,
 				ABFA7FCB1D2F8EB800E9F51D /* CarmeaTest */,
+				ABFA7FE71D322C8100E9F51D /* LightTest */,
 			);
 		};
 /* End PBXProject section */
@@ -1144,6 +1231,21 @@
 				ABFA7FE21D2F940300E9F51D /* Shader.h in Sources */,
 				ABFA7FDE1D2F93F600E9F51D /* MatrixTest.cpp in Sources */,
 				ABFA7FCF1D2F8EB800E9F51D /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABFA7FE41D322C8100E9F51D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABFA80041D32A4E100E9F51D /* LightTest.h in Sources */,
+				ABFA80021D329C1300E9F51D /* Camera.h in Sources */,
+				ABFA7FF61D322CC600E9F51D /* BaseTest.cpp in Sources */,
+				ABFA7FF71D322CC600E9F51D /* BaseTest.h in Sources */,
+				ABFA7FF81D322CC600E9F51D /* Shader.cpp in Sources */,
+				ABFA7FF91D322CC600E9F51D /* Shader.h in Sources */,
+				ABFA7FFC1D322D2600E9F51D /* LightTest.cpp in Sources */,
+				ABFA7FEB1D322C8100E9F51D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1345,6 +1447,24 @@
 			};
 			name = Release;
 		};
+		ABFA7FED1D322C8100E9F51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ABFA7FEE1D322C8100E9F51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1406,6 +1526,14 @@
 			buildConfigurations = (
 				ABFA7FD11D2F8EB800E9F51D /* Debug */,
 				ABFA7FD21D2F8EB800E9F51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ABFA7FEC1D322C8100E9F51D /* Build configuration list for PBXNativeTarget "LightTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABFA7FED1D322C8100E9F51D /* Debug */,
+				ABFA7FEE1D322C8100E9F51D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
