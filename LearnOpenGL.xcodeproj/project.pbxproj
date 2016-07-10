@@ -66,6 +66,12 @@
 		ABFA7FD71D2F8F0F00E9F51D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F051D2A168E00E0AAD2 /* GLUT.framework */; };
 		ABFA7FD81D2F8F1200E9F51D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F031D2A168A00E0AAD2 /* Cocoa.framework */; };
 		ABFA7FD91D2F8F1D00E9F51D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F011D2A167500E0AAD2 /* OpenGL.framework */; };
+		ABFA7FDE1D2F93F600E9F51D /* MatrixTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABFA7FDA1D2F93F600E9F51D /* MatrixTest.cpp */; };
+		ABFA7FDF1D2F940300E9F51D /* BaseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F351D2B646B00E0AAD2 /* BaseTest.cpp */; };
+		ABFA7FE01D2F940300E9F51D /* BaseTest.h in Sources */ = {isa = PBXBuildFile; fileRef = AB965F341D2B642500E0AAD2 /* BaseTest.h */; };
+		ABFA7FE11D2F940300E9F51D /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB965F321D2AA80A00E0AAD2 /* Shader.cpp */; };
+		ABFA7FE21D2F940300E9F51D /* Shader.h in Sources */ = {isa = PBXBuildFile; fileRef = AB965F311D2AA7E900E0AAD2 /* Shader.h */; };
+		ABFA7FE31D2F947E00E9F51D /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB965F091D2A16D300E0AAD2 /* libglfw3.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -425,6 +431,10 @@
 		ABFA7FC71D2F76AF00E9F51D /* texture1.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = texture1.vert; sourceTree = "<group>"; };
 		ABFA7FCC1D2F8EB800E9F51D /* CarmeaTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CarmeaTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFA7FCE1D2F8EB800E9F51D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		ABFA7FDA1D2F93F600E9F51D /* MatrixTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MatrixTest.cpp; sourceTree = "<group>"; };
+		ABFA7FDB1D2F93F600E9F51D /* MatrixTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTest.h; sourceTree = "<group>"; };
+		ABFA7FDC1D2F93F600E9F51D /* texture1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture1.frag; sourceTree = "<group>"; };
+		ABFA7FDD1D2F93F600E9F51D /* texture1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture1.vert; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -497,6 +507,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABFA7FE31D2F947E00E9F51D /* libglfw3.a in Frameworks */,
 				ABFA7FD31D2F8EFD00E9F51D /* libSOIL.a in Frameworks */,
 				ABFA7FD41D2F8F0000E9F51D /* IOKit.framework in Frameworks */,
 				ABFA7FD51D2F8F0500E9F51D /* libGLEW.a in Frameworks */,
@@ -898,6 +909,10 @@
 		ABFA7FCD1D2F8EB800E9F51D /* CarmeaTest */ = {
 			isa = PBXGroup;
 			children = (
+				ABFA7FDA1D2F93F600E9F51D /* MatrixTest.cpp */,
+				ABFA7FDB1D2F93F600E9F51D /* MatrixTest.h */,
+				ABFA7FDC1D2F93F600E9F51D /* texture1.frag */,
+				ABFA7FDD1D2F93F600E9F51D /* texture1.vert */,
 				ABFA7FCE1D2F8EB800E9F51D /* main.cpp */,
 			);
 			path = CarmeaTest;
@@ -1123,6 +1138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABFA7FDF1D2F940300E9F51D /* BaseTest.cpp in Sources */,
+				ABFA7FE01D2F940300E9F51D /* BaseTest.h in Sources */,
+				ABFA7FE11D2F940300E9F51D /* Shader.cpp in Sources */,
+				ABFA7FE21D2F940300E9F51D /* Shader.h in Sources */,
+				ABFA7FDE1D2F93F600E9F51D /* MatrixTest.cpp in Sources */,
 				ABFA7FCF1D2F8EB800E9F51D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
