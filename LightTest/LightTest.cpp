@@ -91,20 +91,58 @@ void LightTest::init(){
     glBindVertexArray(0);}
 
 void LightTest::update(){
-    do_movement();
+    
     
     // Clear the colorbuffer
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
+    do_movement();
+    
+    // Change the light's position values over time (can be done anywhere in the game loop actually, but try to do it at least before using the light source positions)
+    lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
+    lightPos.y = sin(glfwGetTime() / 2.0f) * 1.0f;
+    
     
     // Use cooresponding shader when setting uniforms/drawing objects
     _shaderLight->Use();
     GLint objectColorLoc = glGetUniformLocation(_shaderLight->Program, "objectColor");
     GLint lightColorLoc  = glGetUniformLocation(_shaderLight->Program, "lightColor");
     GLint lightPosLoc = glGetUniformLocation(_shaderLight->Program, "lightPos");
+    GLint viewPosLoc = glGetUniformLocation(_shaderLight->Program, "viewPos");
     glUniform3f(objectColorLoc, 1.0f, 0.5f, 0.31f);
     glUniform3f(lightColorLoc,  1.0f, 0.5f, 1.0f);
     glUniform3f(lightPosLoc, lightPos.x, lightPos.y, lightPos.z);
+    glUniform3f(viewPosLoc, camera->Position.x, camera->Position.y, camera->Position.y);
+    
+    GLint matAmbientLoc = glGetUniformLocation(_shaderLight->Program, "material.ambient");
+    GLint matDiffuseLoc = glGetUniformLocation(_shaderLight->Program, "material.diffuse");
+    GLint matSpecularLoc = glGetUniformLocation(_shaderLight->Program, "material.specular");
+    GLint matShineLoc = glGetUniformLocation(_shaderLight->Program, "material.shininess");
+    
+    glUniform3f(matAmbientLoc, 1.0f, 0.5f, 0.31f);
+    glUniform3f(matDiffuseLoc, 1.0f, 0.5f, 0.31f);
+    glUniform3f(matSpecularLoc, 0.5f, 0.5f, 0.5f);
+    glUniform1f(matShineLoc, 32.0f);
+    
+    GLint lightAmbientLoc = glGetUniformLocation(_shaderLight->Program, "light.ambient");
+    GLint lightDiffuseLoc = glGetUniformLocation(_shaderLight->Program, "light.diffuse");
+    GLint lightSpecularLoc = glGetUniformLocation(_shaderLight->Program, "light.specular");
+    
+    glUniform3f(lightAmbientLoc, 0.2f, 0.2f, 0.2f);
+    glUniform3f(lightDiffuseLoc, 0.5f, 0.5f, 0.5f);// 让我们把这个光调暗一点，这样会看起来更自然
+    glUniform3f(lightSpecularLoc, 1.0f, 1.0f, 1.0f);
+    
+    glm::vec3 lightColor; lightColor.x = sin(glfwGetTime() * 2.0f);
+    lightColor.y = sin(glfwGetTime() * 0.7f);
+    lightColor.z = sin(glfwGetTime() * 1.3f);
+    
+    glm::vec3 diffuseColor = lightColor * glm::vec3(0.5f);
+    glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f);
+    
+    glUniform3f(lightAmbientLoc, ambientColor.x, ambientColor.y, ambientColor.z);
+    glUniform3f(lightDiffuseLoc, diffuseColor.x, diffuseColor.y, diffuseColor.z);
+
     
     // Create camera transformations
     glm::mat4 view;
